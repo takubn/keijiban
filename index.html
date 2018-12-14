@@ -5,7 +5,8 @@
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 <title>dc-board</title>
 </head>
-<body onload="moveBottom()">
+<body>
+
 <!-- 入力部分始まり -->
 <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
     <p class="input-logo"><img src="img/logo.png" alt="ロゴの画像"></p>
@@ -30,31 +31,25 @@
     </div>
 </div>
 <!-- 入力部分終わり -->
+
 <!-- 出力部分始まり-->
 <div class="item-display">
     <div class="display-box">
         <!-- 名前の表示部分 -->
         <div class="display-name">
-            <!-- 5文字で切り捨て、それを変数に格納 -->
-            <!-- 文字列として一行（名前）を出力。idを自動付与する意図-->
-            <div class="white" id="name0">太郎</div>
+            <div class="white">太郎</div>
         </div>
         <!-- 投稿内容の表示部分 -->
         <div class="display-contents">
-        <!-- 文字列として一行（投稿内容）を出力。idを自動付与する意図-->
-            <div class="white" id="contents0">書き込み内容を変える</div>
+            <div class="white">書き込み内容を変える</div>
             <p class="date">2018-11-22 07:54:32</p>
-            <!-- id取得 -->
-            <div id="id0" hidden="">1</div> 
         </div>
         <!-- 編集ボタン -->
-        <button class="buttonEdit" id="btn0" onclick="inputColorEdit(name0,contents0),getId(name0,contents0,id0);">edit</button>
+        <button class="buttonEdit">edit</button>
         <!-- 削除ボタン　-->
-        <button class="buttonDelete" onclick="inputColorDelete(name0,contents0),deleteBy(id0);">delete</button>
+        <button class="buttonDelete">delete</button>
     </div>
 </div>
 <!-- 出力部分終わり-->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>
